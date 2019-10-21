@@ -15,12 +15,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-6g-qjT">
-                                <rect key="frame" x="67" y="188" width="241" height="290"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-6g-qjT">
+                                <rect key="frame" x="67" y="188.5" width="241" height="290"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="FXY-6g-qjT" secondAttribute="height" multiplier="241:290" id="5tc-c1-NKh"/>
+                                    <constraint firstAttribute="width" constant="241" id="IF4-Ty-Ubs"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="241" id="kI1-rp-c5q"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.36019223929999999" green="0.41753575209999999" blue="0.50134223700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FXY-6g-qjT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7KR-qq-Tku"/>
+                            <constraint firstItem="FXY-6g-qjT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Hvo-Fg-JHV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

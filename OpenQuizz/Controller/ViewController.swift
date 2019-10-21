@@ -102,7 +102,7 @@ class ViewController: UIViewController {
         }
         
         
-        // scoreLabel.text = "\(game.score) / 10"
+        // Improvement : score display
         self.showScore()
         
         let screenWidth = UIScreen.main.bounds.width
@@ -142,12 +142,18 @@ class ViewController: UIViewController {
     }
     
     private func showScore() {
+        // The score is updated and disappears
         scoreLabel.text = "\(game.score) / 10"
         scoreLabel.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
-        UIView.animate(withDuration: 0.5, delay: 0.1, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.4, options: [], animations: {
+        
+        // first animation : spring effect to triple the size of scoreLabel
+        // If you are quick enough to validate answers with the simulator, you can display scorLabel with scale factor x4
+        UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.4, initialSpringVelocity: 0.4, options: [], animations: {
             self.scoreLabel.transform = CGAffineTransform(scaleX: 2, y: 2)
         }, completion: nil)
-        UIView.animate(withDuration: 0.9, delay: 1.0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.7, options: [], animations: {
+        
+        // second animation : back to standard size with an ease-in curve animation (starts slowly and speeds up during progression)
+        UIView.animate(withDuration: 0.6, delay: 1.0, options: .curveEaseIn, animations: {
             self.scoreLabel.transform = .identity
         }, completion: nil)
     }
