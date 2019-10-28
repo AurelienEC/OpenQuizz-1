@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -17,11 +17,11 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Loading" translatesAutoresizingMaskIntoConstraints="NO" id="FXY-6g-qjT">
-                                <rect key="frame" x="86.5" y="303" width="241" height="290"/>
+                                <rect key="frame" x="391.5" y="538" width="241" height="290"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="FXY-6g-qjT" secondAttribute="height" multiplier="241:290" id="5tc-c1-NKh"/>
                                     <constraint firstAttribute="width" constant="241" id="IF4-Ty-Ubs"/>
@@ -32,7 +32,6 @@
                                 <rect key="frame" x="433" y="1227" width="158" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="G99-xm-a3O"/>
-                                    <constraint firstAttribute="width" constant="158" id="h10-ai-mTM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Balham" family="Balham" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -40,13 +39,11 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="G99-xm-a3O"/>
-                                        <exclude reference="h10-ai-mTM"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="G99-xm-a3O"/>
-                                        <include reference="h10-ai-mTM"/>
                                     </mask>
                                 </variation>
                             </label>
